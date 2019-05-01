@@ -47,3 +47,16 @@ let ctaH1 = document.querySelector('.cta-text').childNodes[1];
 let ctaButton = document.querySelector('.cta-text').childNodes[3];
 ctaH1.textContent = siteContent['cta']['h1'];
 ctaButton.textContent = siteContent['cta']['button'];
+ctaImg.setAttribute('src', siteContent['cta']['img-src']);
+
+// Update the links in the navigation
+let navElement = document.querySelectorAll('nav a');
+let navArray = Array.from(navElement);
+for (i=0;i<navArray.length;i++){
+  navArray[i].textContent = siteContent['nav'][`nav-item-${i+1}`];
+}
+// navArray.forEach(function(link) {
+//   link.textContent = siteContent['nav']['nav-item-1'];
+// });  
+// try to build as forEach if extra time left
+
