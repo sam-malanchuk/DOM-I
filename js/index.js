@@ -60,3 +60,19 @@ for (i=0;i<navArray.length;i++){
 // });  
 // try to build as forEach if extra time left
 
+
+// Update the main content
+let contentH4 = document.querySelectorAll(".main-content h4");
+let contentP = document.querySelectorAll(".main-content p");
+let contentImg = document.getElementById('middle-img');
+contentH4[0].textContent = siteContent['main-content']['features-h4'];
+contentH4[1].textContent = siteContent['main-content']['about-h4'];
+contentH4[2].textContent = siteContent['main-content']['services-h4'];
+contentH4[3].textContent = siteContent['main-content']['product-h4'];
+contentH4[4].textContent = siteContent['main-content']['vision-h4'];
+contentP[0].textContent = siteContent['main-content']['features-content'];
+contentP[1].textContent = siteContent['main-content']['about-content'];
+contentP[2].textContent = siteContent['main-content']['services-content'];
+contentP[3].textContent = siteContent['main-content']['product-content'];
+contentP[4].textContent = siteContent['main-content']['vision-content'];
+contentImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
