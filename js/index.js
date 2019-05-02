@@ -88,3 +88,20 @@ contactContent[2].textContent = siteContent['contact']['email'];
 // Update the footer
 let footerContent = document.querySelector("footer p");
 footerContent.textContent = siteContent['footer']['copyright'];
+
+// Turn the Nav link items green
+navArray.forEach(function(link) {
+  link.style.color = "green";
+}); 
+// This could have been achieved by setting the whole nav
+// to color green but I believe the forEach was meant to be demonstrated
+
+let selectNav = document.querySelector('nav');
+let homeLink = document.createElement('a');
+let downloadLink = document.createElement('a');
+homeLink.textContent = "Home";
+homeLink.style.color = "green";
+downloadLink.textContent = "Download";
+downloadLink.style.color = "green";
+selectNav.prepend(homeLink);
+selectNav.appendChild(downloadLink);
