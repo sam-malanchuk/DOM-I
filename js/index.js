@@ -55,10 +55,6 @@ let navArray = Array.from(navElement);
 for (i=0;i<navArray.length;i++){
   navArray[i].textContent = siteContent['nav'][`nav-item-${i+1}`];
 }
-// navArray.forEach(function(link) {
-//   link.textContent = siteContent['nav']['nav-item-1'];
-// });  
-// try to build as forEach if extra time left
 
 
 // Update the main content
